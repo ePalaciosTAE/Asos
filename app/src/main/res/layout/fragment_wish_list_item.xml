@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        card_view:cardElevation="3dp"
+        card_view:cardCornerRadius="10dp"
+
+        android:layout_gravity="start">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:background="?android:selectableItemBackground"
+            android:paddingStart="10dp">
+            <include layout="@layout/circle_image_view"/>
+
+        <TextView
+            android:id="@+id/tv_wish_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="?android:selectableItemBackground"
+            android:text="sdfsdfsdf"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>

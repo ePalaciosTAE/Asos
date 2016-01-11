@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".activity.MainActivity">
+
+    <item
+        android:id="@+id/toolbar_wishlist"
+        android:orderInCategory="100"
+        android:title="@string/toolbar_wishlist"
+        android:icon="@drawable/wishlist"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/toolbar_basket"
+        android:orderInCategory="100"
+        android:title="@string/toolbar_basket"
+        android:icon="@drawable/basket"
+        app:showAsAction="always"/>
+
+</menu>
