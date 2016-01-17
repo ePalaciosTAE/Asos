@@ -37,6 +37,29 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+        <activity android:name="com.braintreepayments.api.BraintreeBrowserSwitchActivity"
+                  android:launchMode="singleTask"
+                  android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="${applicationId}.braintree" />
+            </intent-filter>
+        </activity>
+
+        <!-- Required to use Drop-In -->
+        <activity android:name="com.braintreepayments.api.BraintreePaymentActivity" />
+
+        <!-- Required to use PayPal -->
+        <activity android:name="com.paypal.android.sdk.onetouch.core.PayPalOneTouchActivity"
+                  android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- Required to use 3D Secure -->
+        <activity android:name="com.braintreepayments.api.threedsecure.ThreeDSecureWebViewActivity" />
+
+
         <service android:name=".service.AsosAPIService"/>
         <service android:name=".service.WishService"/>
 
